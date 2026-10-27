@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vectorburst Support</title>
+<meta name="description" content="Help with Vectorburst: Arrow Puzzle. Restore purchases, move progress to a new iPhone, refunds, ads and privacy choices, and how to contact us.">
+<meta name="theme-color" content="#05060a">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="./"><img src="icon.png" alt="" width="44" height="44">Vectorburst</a>
+  <nav aria-label="Site">
+    <a href="./">Game</a>
+    <a href="support.html" aria-current="page">Support</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+<main>
+<h1>Support</h1>
+<p class="lead">Need help with Vectorburst? Email us and we'll get back to you.</p>
+<div class="card">
+  <p><strong>Email:</strong> <a class="email" href="mailto:vectorburst.help@gmail.com">vectorburst.help@gmail.com</a></p>
+  <p style="margin:0">Please include your iPhone model, your iOS version and what happened. A screenshot helps a lot.</p>
+</div>
+
+<h2>Common questions</h2>
+<details>
+  <summary>I bought something but didn't get it, or I have a new iPhone</summary>
+  <p>Open the <span class="key">Shop</span> or <span class="key">Settings</span> and tap <span class="key">Restore Purchases</span>, signed in with the same Apple Account you used to buy. Remove Ads, the No Ads Bundle, the Starter Pack and Pulse Passes can always be restored. Shards and the Shard Vault are added to your balance when you buy them, so they come back with your progress (see below), not with Restore Purchases.</p>
+</details>
+<details>
+  <summary>How do I move my progress to a new iPhone?</summary>
+  <p>Your progress is saved on your iPhone and is included in its iCloud or computer backup. Set up your new iPhone from that backup and your progress comes with it. Deleting the app deletes its progress.</p>
+</details>
+<details>
+  <summary>Does Remove Ads remove every ad?</summary>
+  <p>It removes the ads shown between levels. Rewarded ads, the ones you choose to watch for a reward such as extra taps, stay available because they are always your choice.</p>
+</details>
+<details>
+  <summary>When does the Daily Burst change?</summary>
+  <p>At midnight in your own time zone. Everyone gets the same board each day. Your first finished attempt is the one that counts for your streak and the leaderboard.</p>
+</details>
+<details>
+  <summary>How do I get a refund?</summary>
+  <p>Apple handles all payments and refunds. Go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, and choose the purchase.</p>
+</details>
+<details>
+  <summary>How do I change my ad and privacy choices?</summary>
+  <ul>
+    <li>Tracking: iOS <span class="key">Settings › Privacy &amp; Security › Tracking</span>.</li>
+    <li>Ad consent (where it applies, such as Europe, the UK and some US states): Vectorburst <span class="key">Settings › Privacy choices</span>.</li>
+    <li>Anonymous usage statistics: Vectorburst <span class="key">Settings › Share anonymous usage data</span>.</li>
+  </ul>
+  <p>More detail is in the <a href="privacy.html">Privacy Policy</a>.</p>
+</details>
+<details id="report-ad">
+  <summary>I saw an ad that isn't OK</summary>
+  <p>Sorry about that. Ads come from Google AdMob and are set to suit all ages, but a bad one can slip through. Email us with a screenshot (or tell us roughly what it showed and when), and we'll block that ad or advertiser for every player. You can also tap the small ⓘ or AdChoices icon in a corner of the ad to see Google's options for it.</p>
+</details>
+<details>
+  <summary>There's no sound</summary>
+  <p>Vectorburst follows silent mode on your iPhone, so check that silent mode is off and the volume is up. Sound effects and music can also be switched on or off in Vectorburst <span class="key">Settings › Sound and feel</span>. The game mixes with your own music.</p>
+</details>
+<details>
+  <summary>The effects are too much for me</summary>
+  <p>Open Vectorburst <span class="key">Settings</span>. Reduce Motion turns off screen shake, slow motion and drifting backgrounds; Reduce Flashing calms the flashes. You can also pick a high-contrast or colour-blind-safe palette.</p>
+</details>
+</main>
+<footer>
+  <span>© 2026 Vectorburst</span>
+  <a href="support.html">Support</a>
+  <a href="privacy.html">Privacy Policy</a>
+</footer>
+</div>
+<script>
+  // Opens the question a link points to, such as support.html#report-ad from the app's Settings.
+  (function () {
+    function openLinkedQuestion() {
+      var target = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+      if (target && target.tagName === "DETAILS") { target.open = true; }
+    }
+    openLinkedQuestion();
+    window.addEventListener("hashchange", openLinkedQuestion);
+  })();
+</script>
+</body>
+</html>
